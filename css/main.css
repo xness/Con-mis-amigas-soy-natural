@@ -1,0 +1,363 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper
+{
+	width: 810px;
+	min-height: 762px;
+	margin: 0 auto;
+	background: url("../img/background.jpg") no-repeat 0 0;
+}
+
+.top
+{
+	width: 100%;
+	float: left;
+	height: 25px;
+}
+
+	.top .menu
+	{	
+		float: right;
+	}
+	
+		.top .menu ul 
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+			.top .menu ul li 
+			{
+				float: left;
+				margin-right: 18px;
+			}
+			
+				.top .menu ul li a
+				{
+					display: block;
+					font: 400 12px/16px 'Open Sans';
+					color: #294089;
+					line-height: 25px;
+					text-transform: uppercase;
+				}
+				
+					.top .menu ul li a img 
+					{
+						margin-right: 10px;
+					}
+
+.content
+{
+	float: left;
+	width: 100%;
+}
+
+	.content .logo
+	{
+		margin: 10px 70px 0 70px;
+		width: 670px;
+		float: left;
+	}
+	
+		.content .logo img 
+		{
+			display: block;
+			margin: 0 auto;
+		}
+		
+	.content .titulo 
+	{
+		margin: 24px 70px 0;
+		width: 670px;
+		float: left;
+	}
+	
+		.content .titulo h1
+		{
+			font: 100 18px/24px 'niveabook';
+			color: #02186D;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 21px;
+			margin-top: 0;
+		}
+		
+		.content .titulo img
+		{
+			display: block;
+			margin: 0 auto;
+		} 
+	
+	.content .bajada 
+	{
+		margin: 20px 40px 0 140px;
+		width: 630px;
+		float: left;
+	}
+	
+		.content .bajada h2 
+		{
+			font: 100 16px/24px 'niveabook';
+			color: #02186D;
+			text-align: left;
+			margin-top: 0;
+		}
+		
+	.content .participar 
+	{
+		float: right;
+		margin-right: 124px;
+		margin-top: 30px;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   FONT FACE
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'niveaboldregular';
+    src: url('../fonts/nivbo-webfont.eot');
+    src: url('../fonts/nivbo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nivbo-webfont.woff') format('woff'),
+         url('../fonts/nivbo-webfont.ttf') format('truetype'),
+         url('../fonts/nivbo-webfont.svg#niveaboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'niveabook';
+    src: url('../fonts/NIVBK.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
